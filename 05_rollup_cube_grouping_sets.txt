@@ -1,0 +1,72 @@
+   year    | quarter  |  revenue  | grp_level 
+-----------+----------+-----------+-----------
+ 2024      | 1        |  20243504 |         0
+ 2024      | 2        |  21758818 |         0
+ 2024      | 3        |  26738561 |         0
+ 2024      | 4        |  24793696 |         0
+ 2024      | ALL QTRS |  93534578 |         1
+ 2025      | 1        |  16224553 |         0
+ 2025      | 2        |  20461159 |         0
+ 2025      | 3        |  20150468 |         0
+ 2025      | 4        |  26794433 |         0
+ 2025      | ALL QTRS |  83630612 |         1
+ ALL YEARS | ALL QTRS | 177165190 |         3
+(11 rows)
+
+    category     |  sub_category  |  revenue  |  profit  
+-----------------+----------------+-----------+----------
+ ** TOTAL **     | -- subtotal -- | 177165190 | 39833720
+ Furniture       | -- subtotal -- |  38271040 | 11701040
+ Furniture       | Chairs         |  14612700 |  4389500
+ Furniture       | Decor          |   1709440 |   696040
+ Furniture       | Storage        |   3661500 |  1133100
+ Furniture       | Tables         |  18287400 |  5482400
+ Office Supplies | -- subtotal -- |   6426195 |  2055025
+ Office Supplies | Art            |    425651 |   186321
+ Office Supplies | Fasteners      |    402075 |   161455
+ Office Supplies | Paper          |    231954 |    86234
+ Office Supplies | Storage        |   5366515 |  1621015
+ Technology      | -- subtotal -- | 132467955 | 26077655
+ Technology      | Accessories    |   6317305 |  2329905
+ Technology      | Appliances     |  11034650 |  3270250
+ Technology      | Computers      |  82611600 | 13616100
+ Technology      | Phones         |  32504400 |  6861400
+(16 rows)
+
+ store_region |   segment   |  revenue  
+--------------+-------------+-----------
+ North        | Consumer    |  29150171
+ North        | Corporate   |  10254250
+ North        | Home Office |  17733186
+ North        | ALL         |  57137606
+ South        | Consumer    |  29282333
+ South        | Corporate   |  10009951
+ South        | Home Office |  18948381
+ South        | ALL         |  58240665
+ West         | Consumer    |  31232347
+ West         | Corporate   |  11069392
+ West         | Home Office |  19485181
+ West         | ALL         |  61786919
+ ALL          | Consumer    |  89664850
+ ALL          | Corporate   |  31333593
+ ALL          | Home Office |  56166748
+ ALL          | ALL         | 177165190
+(16 rows)
+
+ year_num |    category     | region |  revenue  
+----------+-----------------+--------+-----------
+     2024 | Furniture       |        |  19025460
+     2024 | Office Supplies |        |   3437288
+     2024 | Technology      |        |  71071830
+     2024 |                 | North  |  30411019
+     2024 |                 | South  |  28414314
+     2024 |                 | West   |  34709245
+     2025 | Furniture       |        |  19245580
+     2025 | Office Supplies |        |   2988907
+     2025 | Technology      |        |  61396125
+     2025 |                 | North  |  26726587
+     2025 |                 | South  |  29826351
+     2025 |                 | West   |  27077674
+          |                 |        | 177165190
+(13 rows)
+
